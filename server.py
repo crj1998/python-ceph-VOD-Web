@@ -5,13 +5,13 @@ import boto3
 from boto3.session import Session
 
 
-PUBLIC_IP = "116.63.193.174"
+PUBLIC_IP = "********"
 PRIVATE_IP = "192.168.0.8"
 PORT = "7480"
 
 
-access_key = "M7Z4T1PWG3W2EB0QM8DU"
-secret_key = "20BNh76XbufNQ1eNGzEdBLGRHXX3Fg6FH20YM31P"
+access_key = "*******"
+secret_key = "********"
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "bigdataprocessing"
