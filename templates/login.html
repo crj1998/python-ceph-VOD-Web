@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="{{url_for('static', filename='images/loginicon.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/login.css')}}">
+</head>
+
+<body>
+    <div id="box"></div>
+    <div class="login">
+        <div class="login_container">
+            <div class="login_titles">Ceph OBS key Config</div>
+            <div class="login_ak">
+                <img src="{{url_for('static', filename='images/user.png')}}">
+                <input id="ak" type="text" placeholder="Access Key">
+            </div>
+            <div class="login_sk login_ak">
+                <img src="{{url_for('static', filename='images/pwd.png')}}">
+                <input id="sk" type="text" placeholder="Secret Key">
+            </div>
+            <div class="login_remember">
+                <input id="remember_key" type="checkbox" value="1" checked> Save Key
+            </div>
+            <div class="login_submit" onclick="login()">
+                <div>Login</div>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/login.js')}}"></script>
+    <div class="footer">CopyRight @ <a href=mailto:crj1998@sjtu.edu.cn style="color: #ffffff;">crj1998</a></div>
+</body>
+</html>

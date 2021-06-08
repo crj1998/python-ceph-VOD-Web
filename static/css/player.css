@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a,
+img {
+    border: 0;
+}
+
+body {
+    font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+    background: #111;
+}
+
+.container {
+    width: 758px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+/* display */
+ul.display {
+    float: left;
+    width: 756px;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    background: #222;
+}
+
+ul.display li {
+    float: left;
+    width: 754px;
+    padding: 10px 0;
+    border-top: 1px solid #111;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+ul.display li a {
+    color: #e7ff61;
+    text-decoration: none;
+}
+
+ul.display li .videolist {
+    position: relative;
+    padding: 0 10px;
+}
+
+ul.display li .videolist h2 {
+    padding: 5px;
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+ul.display li .videolist p {
+    padding: 5px 5px 5px 245px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+ul.display li .videolist div {
+    padding: 5px;
+    border: 2px solid #ccc;
+    background: #fff;
+    margin: 0 15px 0 0;
+    float: left;
+}
+
+ul.thumb_view li {
+    width: 250px;
+}
+
+ul.thumb_view li h2 {
+    display: inline;
+}
+
+ul.thumb_view li p {
+    display: none;
+}
+
+ul.thumb_view li .videolist img {
+    margin: 0 0 10px;
+}
+
+a.switch_thumb {
+    width: 122px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0;
+    margin: 10px 0;
+    display: block;
+    background: url("/static/images/switch.gif") no-repeat;
+    outline: none;
+    text-indent: -9999px;
+}
+
+a:hover.switch_thumb {
+    filter: alpha(opacity=75);
+    opacity: .75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+
+a.swap {
+    background-position: left bottom;
+}
+
+img.cover {
+    width: 220px;
+    height:130px
+}
+
+.videoed {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 45px;
+    z-index: 99;
+    border-radius: 100%;
+}
+.videos {
+    display: none;
+    border: 1px solid #080808;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -320px;
+    margin-top: -210px;
+    z-index: 100;
+    width: 640px;
+    height: 360px;
+}
+.vclose {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.footer {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 1px;
+}

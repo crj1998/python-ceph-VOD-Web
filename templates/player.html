@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Big Data Processing Techniques Final Project3" />
+    <meta name="description" content="A Video-on-Demand (VoD) web site based on an open source object-based file system (Ceph file system)." />
+    <title>Video-on-Demand</title>
+
+    <link rel="icon" href="{{url_for('static', filename='images/playericon.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/player.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <a href="javascript:void(0);" class="switch_thumb">Switch Thumb</a>
+        <ul class="display"></ul>
+    </div>
+    <div class="videos"></div>
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='js/player.js')}}"></script>
+    <div class="footer">CopyRight @ <a href=mailto:crj1998@sjtu.edu.cn style="color: #ffffff;">crj1998</a></div>
+</body>
+
+</html>
